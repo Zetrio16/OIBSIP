@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Fariz Ahmad">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>To-Do List</title>
+    <link href="todo.css" rel="stylesheet">
+    <link href="logo.jpg" rel="icon">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+
+
+</head>
+
+<body>
+    <header>
+        <img id="logo" src="logo.jpg">
+        <h1>TODO LIST</h1>
+    </header>
+    <div class="container">
+        <div class="input-bar">
+            <img src="abc/12.png" alt="fariz ahmad logo" id="task-img">
+            <input type="text" placeholder="Write tasks" value="">
+        </div>
+
+        <div class="opt-div">
+            <div class="options">
+                <button class="active-btn" id="all">All</button>
+                <button id="pending">Pending</button>
+                <button id="completed">Completed</button>
+            </div>
+            <button class="btn-del">DELETE ALL</button>
+        </div>
+        <ul class="lists"></ul>
+    </div>
+    <script src="todo.js"></script>
+</body>
+
+</html>
+
+        <!--  opt-div = controls
+        wrapper = container 
+        filters = options
+        clear-btn = btn-del
+        task-box = lists -->

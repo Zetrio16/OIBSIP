@@ -1,0 +1,248 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+body {
+    min-width: 100%;
+    min-height: 100vh;
+    overflow: hidden;
+    background: linear-gradient(100deg, #6f0a5b, #000000);
+}
+
+header {
+    display: flex;
+    background: linear-gradient(0deg, #5a06069c, #dc1ecc);
+}
+
+header > h1 {
+    color: linear-gradient(rgb(58, 1, 41), pink);
+    display: flex;
+    font-size: 70px;
+    margin-top: -20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    align-items: center;
+    justify-content: center;
+}
+
+#logo {
+    width: 150px;
+    height: 150px;
+    mix-blend-mode: color-burn;
+}
+
+#logo:hover {
+    transform: scale(1.5);
+    transition: 0.5s;
+}
+
+.container {
+    max-width: 500px;
+    padding: 40px 0 30px;
+    margin: 80px auto;
+    background: #ee96db;
+    border-radius: 5px;
+}
+
+.input-bar {
+    height: 50px;
+    padding: 0px 25px;
+    position: relative;
+    border-radius: 2px;
+}
+
+.input-bar>img {
+    transform: translate(10px, 7px);
+    position: absolute;
+    width: 28px;
+    height: 25px;
+}
+
+.input-bar input {
+    height: 80%;
+    width: 100%;
+    font-size: 16px;
+    border-radius: 8px;
+    padding: 0 5px 0 50px;
+    border: 2px solid #250120;
+    background-color: rgb(242, 234, 234);
+}
+
+.opt-div {
+    padding: 20px;
+    border-bottom: 1px solid #000000;
+
+}
+
+.opt-div li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.opt-div .btn-del {
+    border: none;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    font-size: 14px;
+    padding: 8px;
+    border-radius: 4px;
+    transition: transform 0.25s ease;
+    background: linear-gradient(135deg, #04ab2e, #003d03);
+}
+
+.btn-del.active {
+    opacity: 0.9;
+    pointer-events: auto;
+}
+
+.btn-del:hover {
+    transition: transform 0.25s ease;
+    background: linear-gradient(135deg, #003d03, #04ab2e);
+}
+
+.btn-del:active {
+    transform: scale(0.93);
+}
+
+.options button {
+    margin: 0 10px;
+    font-size: 14px;
+    border-radius: 5px;
+    color: #000000;
+    cursor: pointer;
+    padding: 7px;
+    background-color: rgb(235, 80, 178);
+    transition: transform 0.25s ease;
+}
+
+.options button:hover,
+.options button:focus {
+    background: linear-gradient(0deg, #52023a, #f01dde);
+}
+
+.options .active-btn {
+    background: linear-gradient(0deg, #52023a, #f01dde);
+    color: white;
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+
+.lists {
+    margin-top: 20px;
+    margin-right: 5px;
+    padding: 0 20px 10px 25px;
+}
+
+.lists.overflow {
+    overflow-y: auto;
+    max-height: 150px;
+}
+
+.lists::-webkit-scrollbar {
+    width: 8px;
+}
+
+.lists::-webkit-scrollbar-track {
+    background: #bf549b;
+    border-radius: 20px;
+}
+
+.lists::-webkit-scrollbar-thumb {
+    background: #8b0061;
+    border-radius: 20px;
+}
+
+.lists::-webkit-scrollbar-thumb:hover {
+    background-color: #770b55;
+}
+
+.lists .list {
+    list-style: none;
+    display: flex;
+    border-bottom: 1px solid #ffffff;
+    padding: 20px;
+}
+
+.list label {
+    display: flex;
+}
+
+label p {
+    user-select: none;
+    margin-left: 12px;
+    word-wrap: break-word;
+}
+
+.list label p.checked {
+    text-decoration: solid line-through rgb(47, 0, 40);
+    color: rgb(47, 0, 40);
+}
+
+.list label {
+    accent-color: rgb(133, 5, 122);
+}
+
+.opt-div,
+li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.ellipsis :where(p, li) {
+    cursor: pointer;
+}
+
+.list .ellipsis {
+    position: relative;
+}
+
+.ellipsis .tasks {
+    z-index: 2;
+    right: -2px;
+    /* bottom: -65 px; */
+    padding: 0px;
+    background: #fff;
+    position: absolute;
+    border-radius: 5px;
+    transform: scale(0);
+    transform-origin: top right;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.15);
+    transition: transform 0.1s ease-in;
+}
+
+.ellipsis:hover .tasks {
+    transform: scale(1);
+}
+
+.tasks li {
+    height: 25px;
+    font-size: 16px;
+    margin-bottom: 2px;
+    padding: 17px 15px;
+    cursor: pointer;
+    justify-content: flex-start;
+}
+
+.tasks li:hover {
+    background: #c0bcbc;
+    border-radius: 5px;
+}
+
+.tasks li:last-child {
+    margin-bottom: 0px;
+
+}
+
+.tasks i {
+    padding-right: 5px;
+}
+
+.lists {
+    margin-top: 20px;
+    margin-right: 5px;
+    padding: 0 20px 10px 25px;
+}

@@ -1,0 +1,125 @@
+* {
+    font-family:'Courier New', Courier, monospace;
+    font-weight: bold;
+}
+
+body {
+    text-align: center;
+    min-height: 100%;
+    padding: 0px;
+    margin: 0px;
+}
+
+header {
+    background: linear-gradient(rgb(22, 22, 22), rgb(12, 157, 145));
+}
+
+header:hover {
+    background: linear-gradient(rgb(125, 125, 125), rgb(12, 157, 145));
+}
+
+footer {
+    background: linear-gradient(rgb(0, 58, 64), rgb(12, 157, 145));
+    color: rgb(0, 0, 0);
+    padding: 10px;
+}
+
+footer:hover {
+    background: linear-gradient(rgb(125, 125, 125), rgb(12, 157, 145));
+}
+
+img {
+    width: 150px;
+    height: 150px;
+    mix-blend-mode: color-burn;
+}
+
+img:hover {
+    transform: scale(1.5);
+    transition: 0.5s;
+}
+
+.calculator > div {
+    padding: 5px;
+}
+
+.container {
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(rgb(0, 39, 38), rgb(1, 99, 99));
+}
+
+.calculator {
+    background: rgb(0, 0, 0);
+    border: 2px solid rgb(0, 33, 45);
+    padding: 20px;
+    color: black;
+    border-radius: 10px;
+}
+
+.calculator:hover {
+    transform: scale(1.05);
+    transition: 0.5s;
+    background: linear-gradient(rgb(0, 0, 0), rgb(0, 68, 62));
+}
+
+.div-bar {
+    display: flex;
+    margin: 20px 0px;
+}
+
+#show-bar {
+    border-radius: 5px;
+    height: 100px;
+    width: 100%;
+    font-size: large;
+    text-align: right;
+    flex: 1;
+}
+
+.butt {
+    color: black;
+    width: 60px;
+    height: 30px;
+    border-radius: 20px;
+    box-shadow: -1px -2px 5px 0px rgb(11, 101, 136);
+    font-size: 15px;
+    
+}
+.num{
+    background-color: rgb(169, 167, 167);
+}
+
+.butt:hover {
+    cursor: pointer;
+    color: white;
+    background: linear-gradient(rgb(0, 0, 0), rgb(0, 68, 62));
+}
+
+.butt:active {
+    color: white;
+    transform: scale(0.95);
+    box-shadow: 2px 2px 15px 1px rgb(0, 154, 152);
+}
+
+.Name-cal {
+    color: white;
+}
+
+#AC{
+    background-color: red;
+}
+
+#DEL{
+    background-color: orange;
+}
+#equal{
+    background-color:green;
+    width: 130px;
+}
+.op{
+    background-color: rgb(233, 249, 5);
+}
